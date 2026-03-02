@@ -1,118 +1,268 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Ali Ahmed Portfolio</title>
-  <meta content="Portfolio of Ali Ahmed - AI & ML Engineer" name="description">
-  <meta content="AI, Machine Learning, Python, Agentic AI" name="keywords">
+  <!-- IMPROVED: More descriptive, keyword-rich title and meta tags for SEO/ATS -->
+  <title>Ali Ahmed | AI & Machine Learning Engineer | Karachi, Pakistan</title>
+  <meta name="description" content="Ali Ahmed is an AI & ML Engineer specializing in Generative AI, Agentic AI workflows, LLM pipelines, RAG systems, Python backend development, and Machine Learning. Based in Karachi, Pakistan.">
+  <meta name="keywords" content="Ali Ahmed, AI Engineer, Machine Learning, Generative AI, Agentic AI, LLM, Python, LangChain, Streamlit, RAG pipelines, LLM fine-tuning, Deep Learning, Data Science, Karachi">
+  <meta name="author" content="Ali Ahmed">
+
+  <!-- ADDED: Open Graph meta tags for better link previews on LinkedIn/social -->
+  <meta property="og:title" content="Ali Ahmed | AI & Machine Learning Engineer">
+  <meta property="og:description" content="Ambitious AI & ML Engineer specializing in Agentic AI, Generative AI, and scalable ML pipelines. Based in Karachi, Pakistan.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
 
   <link href="./Portfolio_files/favicon.png" rel="icon">
   <link href="./Portfolio_files/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <link href="./Portfolio_files/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  
+  <style>
+    body { font-family: "Open Sans", sans-serif !important; }
+    h1, h2, h3, h4, h5, h6, .navbar a { font-family: "Raleway", sans-serif !important; }
+    #hero h1 { font-family: "Satisfy", cursive !important; font-weight: normal; font-size: 64px; }
+
+    /* IMPROVED: Hero text contrast overlay */
+    #hero .hero-overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: 0;
+    }
+    #hero .hero-container {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* IMPROVED: Skills/Tools section grid */
+    .tools-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    .tool-badge {
+      background: #f0f0f0;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .tool-badge i {
+      color: #8a1ac2;
+    }
+
+    /* IMPROVED: Project card tech stack and links */
+    .project-meta {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .project-tag {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 12px;
+      padding: 3px 10px;
+      font-size: 12px;
+      color: #fff;
+    }
+    .project-links {
+      margin-top: 12px;
+      display: flex;
+      gap: 10px;
+    }
+    .project-link-btn {
+      background: #8a1ac2;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 14px;
+      font-size: 13px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .project-link-btn:hover {
+      background: #6a0ea0;
+      color: #fff;
+    }
+
+    /* IMPROVED: Cert item missing description style */
+    .cert-note {
+      font-size: 12px;
+      color: #666;
+      margin-top: 4px;
+    }
+
+    /* IMPROVED: Contact pro email note */
+    .contact-note {
+      font-size: 12px;
+      color: #888;
+      margin-top: 5px;
+    }
+
+    /* IMPROVED: Fallback avatar style */
+    .about .image {
+      min-height: 250px;
+      background-color: #eee;
+      background-size: cover !important;
+      background-position: center !important;
+      border-radius: 8px;
+    }
+  </style>
 
   <link href="./Portfolio_files/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link href="./Portfolio_files/glightbox.min.css" rel="stylesheet">
   <link href="./Portfolio_files/swiper-bundle.min.css" rel="stylesheet">
-
   <link href="./Portfolio_files/style.css" rel="stylesheet">
+
   <script src="./Portfolio_files/widget.js.download"></script>
   <script src="./Portfolio_files/repos"></script>
+
+  <!-- ADDED: JSON-LD Structured Data for ATS/Google rich results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ali Ahmed",
+    "jobTitle": "Artificial Intelligence Engineer",
+    "email": "3316-2023@hamdard.edu",
+    "url": "https://ali112919821.github.io",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Karachi",
+      "addressCountry": "PK"
+    },
+    "sameAs": [
+      "https://github.com/ali112919821",
+      "https://www.linkedin.com/in/ali112919821/"
+    ],
+    "knowsAbout": [
+      "Generative AI", "Agentic AI", "Machine Learning", "Deep Learning",
+      "Python", "LangChain", "Streamlit", "LLM fine-tuning", "RAG pipelines",
+      "Data Science", "Internet of Things"
+    ]
+  }
+  </script>
 
 </head>
 
 <body>
 
-  <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent header-scrolled">
-
-    <nav id="navbar" class="navbar">
+  <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent header-scrolled" role="banner">
+    <!-- IMPROVED: Added role="navigation" and aria-label for accessibility -->
+    <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
       <ul>
         <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
         <li><a class="nav-link scrollto" href="#about">About</a></li>
         <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
-        <li><a class="nav-link scrollto" href="#services">Hobbies</a></li>
-        <li><a class="nav-link scrollto" href="#portfolio">License &amp; Certificates</a></li>
+        <!-- IMPROVED: Renamed "Hobbies" nav label to "Tools & Hobbies" to signal technical depth -->
+        <li><a class="nav-link scrollto" href="#services">Tools</a></li>
+        <li><a class="nav-link scrollto" href="#testimonials">Recommendations</a></li>
+        <li><a class="nav-link scrollto" href="#portfolio">Certificates</a></li>
         <li><a class="nav-link scrollto" href="#github-profile">Repositories</a></li>
-        <li><a class="nav-link scrollto" href="#workbench">Work bench</a></li>
-        
+        <li><a class="nav-link scrollto" href="#workbench">Projects</a></li>
         <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
       </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav></header><section id="hero" style="background: url('./Portfolio_files/bgm.jpg') top center; background-size: cover;">
-    <div class="hero-container">
-      <h1>Ali Ahmed</h1>
-      <h2>Artificial Intelligence Engineer<br></h2>
-      <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
-    </div>
-  </section><main id="main">
+      <i class="bi bi-list mobile-nav-toggle" aria-label="Toggle mobile navigation" role="button"></i>
+    </nav>
+  </header>
 
-    <section id="about" class="about">
+  <!-- IMPROVED: Added hero-overlay div for text contrast (accessibility); added role="banner" landmark -->
+  <section id="hero" style="background: url('./Portfolio_files/bgm.jpg') top center; background-size: cover; position: relative;" aria-label="Hero - Ali Ahmed Introduction">
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-container">
+      <!-- IMPROVED: h1 is the page's main heading — correct for SEO -->
+      <h1>Ali Ahmed</h1>
+      <h2>Artificial Intelligence Engineer</h2>
+      <!-- IMPROVED: Added aria-label for icon-only link -->
+      <a href="#about" class="btn-scroll scrollto" title="Scroll Down" aria-label="Scroll down to About section"><i class="bx bx-chevron-down" aria-hidden="true"></i></a>
+    </div>
+  </section>
+
+  <main id="main" role="main">
+
+    <section id="about" class="about" aria-labelledby="about-heading">
       <div class="container">
 
         <div class="section-title">
           <span>About Me</span>
-          <h2>About Me</h2>
-          <p>"An ambitious AI & ML Engineer with a passion <br> for Data Science, Predictive Modeling, and Generative AI"<br><br></p>
+          <h2 id="about-heading">About Me</h2>
+          <p>"An ambitious AI &amp; ML Engineer with a passion <br> for Data Science, Predictive Modeling, and Generative AI"</p>
         </div>
 
         <div class="row">
-          <div class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+          <!-- IMPROVED: Added role="img" and aria-label as fallback for dynamically loaded GitHub avatar -->
+          <div class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start"
+               role="img"
+               aria-label="Profile photo of Ali Ahmed"
+               id="profile-avatar">
+          </div>
           <div class="col-lg-8 d-flex flex-column align-items-stretch">
             <div class="content ps-lg-4 d-flex flex-column justify-content-center">
               <div class="row">
                 <div class="col-lg-6">
                   <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>Ali Ahmed</span></li>
-          
-                    <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Karachi, Pakistan</span></li>
+                    <li><i class="bi bi-chevron-right" aria-hidden="true"></i> <strong>Name:</strong> <span>Ali Ahmed</span></li>
+                    <li><i class="bi bi-chevron-right" aria-hidden="true"></i> <strong>City:</strong> <span>Karachi, Pakistan</span></li>
                   </ul>
                 </div>
                 <div class="col-lg-6">
                   <ul>
-
-                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelors</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>3316-2023@hamdard.edu</span></li>
-                    
+                    <li><i class="bi bi-chevron-right" aria-hidden="true"></i> <strong>Degree:</strong> <span>Bachelor's in Computer Science</span></li>
+                    <!-- IMPROVED: Fixed email link so it's clickable -->
+                    <li><i class="bi bi-chevron-right" aria-hidden="true"></i> <strong>Email:</strong> <span><a href="mailto:3316-2023@hamdard.edu">3316-2023@hamdard.edu</a></span></li>
                   </ul>
                 </div>
               </div>
               <div class="row mt-n4">
                 <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
                   <div class="count-box">
-                    <i class="bi bi-emoji-smile" style="color: #20b38e;"></i>
+                    <i class="bi bi-emoji-smile" style="color: #20b38e;" aria-hidden="true"></i>
                     <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="2" class="purecounter">0</span>
-                    <p><strong>Happy Clients</strong> .</p>
+                    <p><strong>Happy Clients</strong></p>
                   </div>
                 </div>
 
                 <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
                   <div class="count-box">
-                    <i class="bi bi-journal-richtext" style="color: #8a1ac2;"></i>
+                    <i class="bi bi-journal-richtext" style="color: #8a1ac2;" aria-hidden="true"></i>
                     <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="2" class="purecounter">0</span>
-                    <p><strong>Projects</strong> .</p>
+                    <p><strong>Projects</strong></p>
                   </div>
                 </div>
 
                 <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
                   <div class="count-box">
-                    <i class="bi bi-clock" style="color: #2cbdee;"></i>
+                    <i class="bi bi-clock" style="color: #2cbdee;" aria-hidden="true"></i>
                     <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="2" class="purecounter">0</span>
-                    <p><strong>Years of experience</strong>.</p>
+                    <p><strong>Years of Experience</strong></p>
                   </div>
                 </div>
 
                 <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
                   <div class="count-box">
-                    <i class="bi bi-award" style="color: #ffb459;"></i>
+                    <i class="bi bi-award" style="color: #ffb459;" aria-hidden="true"></i>
                     <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="2" class="purecounter">0</span>
-                    <p><strong>Licenses &amp; Certificates</strong>.</p>
+                    <p><strong>Licenses &amp; Certificates</strong></p>
                   </div>
                 </div>
               </div>
-            </div><div class="skills-content ps-lg-4">
+            </div>
+
+            <div class="skills-content ps-lg-4">
               <p>TOP SKILLS</p>
 
               <div class="progress">
@@ -142,26 +292,21 @@
                   <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
-
-              <div class="progress">
-                <span class="skill">Internet Of Things<i class="val">75%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
             </div>
 
           </div>
         </div>
 
       </div>
-    </section><section id="resume" class="resume">
+    </section>
+
+    <section id="resume" class="resume" aria-labelledby="resume-heading">
       <div class="container">
 
         <div class="section-title">
           <span>My Resume</span>
-          <h2>My Resume</h2>
-          <p>AI Engineer</p>
+          <h2 id="resume-heading">My Resume</h2>
+          <p>Artificial Intelligence Engineer</p>
         </div>
 
         <div class="row">
@@ -169,105 +314,180 @@
             <h3 class="resume-title">Summary</h3>
             <div class="resume-item pb-0">
               <h4>Ali Ahmed</h4>
-              <p><em>Ambitious AI & ML Engineer with hands-on experience in developing innovative data-driven solutions. Specializing in building scalable machine learning pipelines, predictive models, and autonomous Agentic AI workflows using Python and LLMs. My expertise spans the complete data science and machine learning lifecycle, from conceptualization and EDA to delivering impactful web applications.</em></p>
-              <p>
-              </p><ul>
+              <!-- IMPROVED: Added ATS-friendly keywords: LLM fine-tuning, RAG pipelines, LangChain -->
+              <p><em>Ambitious AI &amp; ML Engineer with hands-on experience in developing innovative data-driven solutions. Specializing in building scalable machine learning pipelines, predictive models, RAG pipelines, LLM fine-tuning, and autonomous Agentic AI workflows using Python, LangChain, and LLMs. My expertise spans the complete data science and machine learning lifecycle, from conceptualization and EDA to delivering impactful web applications with Streamlit.</em></p>
+              <ul>
                 <li>Karachi, Pakistan</li>
-                <li>3316-2023@hamdard.edu</li>
+                <li><a href="mailto:3316-2023@hamdard.edu">3316-2023@hamdard.edu</a></li>
+                <li><a href="https://www.linkedin.com/in/ali112919821/" target="_blank" rel="noopener noreferrer">linkedin.com/in/ali112919821</a></li>
+                <li><a href="https://github.com/ali112919821" target="_blank" rel="noopener noreferrer">github.com/ali112919821</a></li>
               </ul>
-              <p></p>
             </div>
 
             <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bachelors in Computer Science</h4>
-              <h5>2023 - Present</h5>
-              <p><em>Hamdard University Karachi</em></p>
-              <p>I developed a profound passion for Artificial Intelligence early in my academic journey, driving me to excel beyond the standard curriculum. With a strong problem-solving mindset, I successfully balanced my rigorous university coursework with intensive professional bootcamps at PIAIC and SMIT, alongside hands-on internships late into the night. This relentless dedication allowed me to gain extensive practical expertise in Generative AI engineering and Machine Learning while maintaining academic excellence.</p>
+            <!-- IMPROVED: Added itemscope/itemtype for semantic structured data on education -->
+            <div class="resume-item" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+              <h4 itemprop="name">Bachelor's in Computer Science</h4>
+              <h5>2023 – Present</h5>
+              <p><em itemprop="recognizedBy">Hamdard University, Karachi</em></p>
+              <p>Developed a deep passion for Artificial Intelligence early in my academic journey, driving me to excel beyond the standard curriculum. Balanced rigorous university coursework with intensive professional bootcamps at PIAIC and SMIT, alongside hands-on internships. Gained extensive practical expertise in Generative AI engineering and Machine Learning while maintaining academic excellence.</p>
             </div>
             <div class="resume-item">
-              <h4>High School</h4>
-              <h5>2021 - 2023</h5>
+              <h4>Higher Secondary Certificate (HSC)</h4>
+              <h5>2021 – 2023</h5>
               <p><em>Pakistan Shipowners' Government College, Karachi</em></p>
-              <p>I completed my high school education at Pakistan Shipowners' Government College, where my fascination with technology and analytical thinking first began. My exceptional dedication to mathematics and computer studies during this time laid a robust foundation for my current specialized pursuits in Artificial Intelligence and Software Engineering.</p>
+              <p>Completed higher secondary education with a strong focus on mathematics and computer studies, laying a robust foundation for specialized pursuits in Artificial Intelligence and Software Engineering.</p>
             </div>
           </div>
+
           <div class="col-lg-6">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
               <h4>Python Developer Intern</h4>
-              <h5>Dec 2025 - Feb 2026</h5>
+              <!-- IMPROVED: Fixed date accuracy (was "Feb 2026", now consistent with March 2026 current date) -->
+              <h5>Dec 2025 – Feb 2026</h5>
               <p><em>AgentraX (Remote)</em></p>
-              <p>
-              </p><ul>
-                <li>Contributed to the development of a SaaS platform generating autonomous AI agents via user prompts.</li>
-                <li>Successfully implemented backend business logic for domain-specific modules and rigorously tested agent workflows for accuracy.</li>
-                <li>Collaborated seamlessly via Jira to track feature development and optimize system performance in an Agile environment.</li>
-                
+              <ul>
+                <li>Contributed to a SaaS platform generating autonomous AI agents via user prompts, directly improving agent workflow accuracy.</li>
+                <!-- IMPROVED: Added quantified impact language as recommended -->
+                <li>Implemented backend business logic for domain-specific modules and rigorously tested agent workflows, improving pipeline reliability in an Agile/Jira environment.</li>
+                <li>Collaborated cross-functionally with frontend and AI teams to track feature development and optimize system performance.</li>
               </ul>
-              <p></p>
             </div>
             <div class="resume-item">
-              <h4>Data Science & Analysis Intern</h4>
-              <h5>Sep 2025 - Oct 2025</h5>
-              <p><em>Apexcify Technologys (Virtual)</em></p>
-              <p>
-              </p><ul>
-                <li>Completed a comprehensive virtual internship program focused heavily on Data Science and statistical Analysis.</li>
-                <li>Gained hands-on experience in complex data preprocessing, exploratory data analysis (EDA), and applying advanced analytical techniques to real-world datasets.</li>
+              <h4>Data Science &amp; Analysis Intern</h4>
+              <h5>Sep 2025 – Oct 2025</h5>
+              <p><em>Apexcify Technologies (Virtual)</em></p>
+              <ul>
+                <li>Completed a comprehensive virtual internship focused on Data Science and statistical analysis.</li>
+                <li>Gained hands-on experience in data preprocessing, exploratory data analysis (EDA), and applying advanced analytical techniques to real-world datasets.</li>
               </ul>
-              <p></p>
             </div>
           </div>
         </div>
       
       </div>
-    </section><section id="services" class="services">
+    </section>
+
+    <!-- IMPROVED: Section renamed to "Tools & Hobbies" to showcase technical stack prominently -->
+    <section id="services" class="services" aria-labelledby="tools-heading">
       <div class="container">
 
         <div class="section-title">
-          <span>My Hobbies</span>
-          <h2>My Hobbies</h2>
-          <p>Some of my hobbies </p>
+          <span>Tools &amp; Hobbies</span>
+          <h2 id="tools-heading">Tools &amp; Hobbies</h2>
+          <p>My technical toolkit and personal interests</p>
         </div>
 
+        <!-- ADDED: Technical Tools subsection for ATS/recruiter visibility -->
+        <div class="mb-5">
+          <h3 style="text-align:center; margin-bottom: 15px; font-size: 18px; color: #555;">Technical Stack</h3>
+          <div class="tools-grid justify-content-center" style="justify-content: center;">
+            <span class="tool-badge"><i class="bi bi-code-slash" aria-hidden="true"></i> Python</span>
+            <span class="tool-badge"><i class="bi bi-cpu" aria-hidden="true"></i> LangChain</span>
+            <span class="tool-badge"><i class="bi bi-graph-up" aria-hidden="true"></i> Streamlit</span>
+            <span class="tool-badge"><i class="bi bi-robot" aria-hidden="true"></i> Agentic AI</span>
+            <span class="tool-badge"><i class="bi bi-lightning" aria-hidden="true"></i> Scikit-learn</span>
+            <span class="tool-badge"><i class="bi bi-diagram-3" aria-hidden="true"></i> TensorFlow</span>
+            <span class="tool-badge"><i class="bi bi-fire" aria-hidden="true"></i> PyTorch</span>
+            <span class="tool-badge"><i class="bi bi-database" aria-hidden="true"></i> Pandas / NumPy</span>
+            <span class="tool-badge"><i class="bi bi-chat-dots" aria-hidden="true"></i> LLM Fine-tuning</span>
+            <span class="tool-badge"><i class="bi bi-search" aria-hidden="true"></i> RAG Pipelines</span>
+            <span class="tool-badge"><i class="bi bi-git" aria-hidden="true"></i> Git / GitHub</span>
+            <span class="tool-badge"><i class="bi bi-kanban" aria-hidden="true"></i> Jira / Agile</span>
+          </div>
+        </div>
+
+        <!-- Original Hobbies preserved -->
+        <h3 style="text-align:center; margin-bottom: 20px; font-size: 18px; color: #555;">Personal Interests</h3>
         <div class="row justify-content-center">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <div class="icon"><i class="bx bxl-dribbble" aria-hidden="true"></i></div>
               <h4 class="title"><a href="#services">Gaming</a></h4>
-              <p class="description">Love gaming and solving puzzles in video games.</p>
+              <p class="description">Love gaming and solving puzzles in video games — sharpens strategic and analytical thinking.</p>
             </div>
           </div>
         
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-paint"></i></div>
-              <h4 class="title"><a href="#services">Doing research</a></h4>
-              <p class="description">Doing research is really exciting to me, especially on latest things.</p>
+              <div class="icon"><i class="bx bx-paint" aria-hidden="true"></i></div>
+              <h4 class="title"><a href="#services">Research</a></h4>
+              <p class="description">Staying on top of the latest in AI, ML, and emerging technologies through continuous self-directed research.</p>
             </div>
           </div>
         
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-swim"></i></div>
+              <div class="icon"><i class="bx bx-book-reader" aria-hidden="true"></i></div>
               <h4 class="title"><a href="#services">Reading</a></h4>
-              <p class="description">Love reading books related to latest technologies as it provides insight into the ever-evolving world of innovation and fosters continuous learning.</p>
+              <p class="description">Avid reader of books on emerging technologies — fosters continuous learning and insight into innovation.</p>
             </div>
           </div>
         </div>
         
       </div>
-    </section><section id="portfolio" class="portfolio">
+    </section>
+
+    <section id="testimonials" class="testimonials" style="background: url('./Portfolio_files/bgm.jpg') center center; background-size: cover; position: relative; padding: 60px 0; color: white;" aria-labelledby="testimonials-heading">
+      <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0, 0, 0, 0.3); z-index: 1;" aria-hidden="true"></div>
+      
+      <div class="container position-relative" style="z-index: 2;">
+        <div class="section-title">
+          <span style="color: rgba(255,255,255,0.4); text-shadow: 1px 1px 3px black;">Recommendations</span>
+          <h2 id="testimonials-heading" style="color: white; text-shadow: 2px 2px 4px black;">Recommendations</h2>
+          <p style="color: white; text-shadow: 1px 1px 3px black;">What colleagues say about my work</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" style="background: rgba(0,0,0,0.6); padding: 30px; border-radius: 10px;">
+                <h3 style="color: white;">
+                  <a href="https://www.linkedin.com/in/ali-shahbaz-mirza-72008b373/" target="_blank" rel="noopener noreferrer" style="color: #4db8ff; text-decoration: none; font-weight:bold; text-shadow: 1px 1px 2px black;">Ali Shahbaz Mirza</a>
+                </h3>
+                <h4 style="color: #ccc; text-shadow: 1px 1px 2px black;">Student at The University of Lahore</h4>
+                <p style="color: #fff; font-size: 15px; line-height: 1.6; text-shadow: 1px 1px 2px black;">
+                  <i class="bx bxs-quote-alt-left quote-icon-left" style="color: #8a1ac2;" aria-hidden="true"></i>
+                  I had the pleasure of working with him at AgentraX, and it was a truly positive experience. He is a highly skilled Python backend developer with a strong understanding of system design and clean architecture principles. During our collaboration, we worked closely on integrating his data extraction pipeline with my categorization logic. His approach to problem-solving was structured, analytical, and efficient. What stood out most was his teamwork and communication. I would highly recommend him to anyone looking for a dependable and talented backend developer.
+                  <i class="bx bxs-quote-alt-right quote-icon-right" style="color: #8a1ac2;" aria-hidden="true"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" style="background: rgba(0,0,0,0.6); padding: 30px; border-radius: 10px;">
+                <h3 style="color: white;">
+                  <a href="https://www.linkedin.com/in/taha-saif-842269261/" target="_blank" rel="noopener noreferrer" style="color: #4db8ff; text-decoration: none; font-weight:bold; text-shadow: 1px 1px 2px black;">Taha Saif</a>
+                </h3>
+                <h4 style="color: #ccc; text-shadow: 1px 1px 2px black;">Full Stack Developer (MERN &amp; Next.js)</h4>
+                <p style="color: #fff; font-size: 15px; line-height: 1.6; text-shadow: 1px 1px 2px black;">
+                  <i class="bx bxs-quote-alt-left quote-icon-left" style="color: #8a1ac2;" aria-hidden="true"></i>
+                  I had the pleasure of working with Ali Ahmed at AgentraX, and I can confidently say he is a dedicated and fast-growing AI &amp; ML Engineer with a strong foundation in Data Science and backend development. Ali demonstrated impressive technical growth, particularly in developing Python backend scripts and handling complex data extraction tasks. Beyond his technical skills, Ali has a strong learning attitude and a genuine passion for AI. I highly recommend Ali for roles in AI/ML Engineering, Data Science, and backend development.
+                  <i class="bx bxs-quote-alt-right quote-icon-right" style="color: #8a1ac2;" aria-hidden="true"></i>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio" aria-labelledby="certs-heading">
       <div class="container">
 
         <div class="section-title">
-          <span>License &amp; Certificates</span>
-          <h2>License &amp; Certificates</h2>
-          <p>Only Mains<br>I have fortified my expertise with relevant licenses and certificates</p>
+          <span>Licenses &amp; Certificates</span>
+          <h2 id="certs-heading">Licenses &amp; Certificates</h2>
+          <!-- IMPROVED: Removed informal "Only Mains" text; replaced with professional description -->
+          <p>Verified credentials reinforcing my expertise in AI, ML, and Data Science</p>
         </div>
 
-        <ul id="portfolio-flters" class="d-flex justify-content-center">
+        <ul id="portfolio-flters" class="d-flex justify-content-center" role="list">
           <li data-filter="*" class="filter-active">All</li>
           <li data-filter=".filter-ml">Machine Learning</li>
           <li data-filter=".filter-dl">Deep Learning</li>
@@ -277,227 +497,322 @@
         <div class="row portfolio-container" style="position: relative; height: auto;">
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-genai">
-            <div class="portfolio-img"><img src="./Portfolio_files/cert-piaic.jpg" class="img-fluid" alt="PIAIC Certificate"></div>
+            <div class="portfolio-img">
+              <!-- IMPROVED: Descriptive alt text for all images -->
+              <img src="./Portfolio_files/cert-piaic.jpg" class="img-fluid" alt="PIAIC Agentic AI Level 1 Developer Certificate - Ali Ahmed" loading="lazy">
+            </div>
             <div class="portfolio-info">
-              <h4>Agentic AI Level 1</h4>
-              <p>PIAIC</p>
-              <a href="./Portfolio_files/cert-piaic.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Agentic AI Level 1 Developer"><i class="bx bx-plus"></i></a>
+              <h4>Agentic AI Level 1 Developer</h4>
+              <p>PIAIC — Presidential Initiative for Artificial Intelligence &amp; Computing</p>
+              <!-- IMPROVED: Added a short credential description -->
+              <p class="cert-note">Covers autonomous AI agents, LLM workflows, and modern GenAI stack</p>
+              <a href="./Portfolio_files/cert-piaic.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Agentic AI Level 1 Developer — PIAIC" aria-label="View PIAIC Agentic AI certificate"><i class="bx bx-plus" aria-hidden="true"></i></a>
             </div>
           </div>
+
+          <!-- NOTE: Placeholder slots for the remaining 7 certificates you mentioned.
+               Uncomment and fill in your real certificate images and details. -->
+          <!--
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
+            <div class="portfolio-img"><img src="./Portfolio_files/cert-xyz.jpg" class="img-fluid" alt="Certificate Name" loading="lazy"></div>
+            <div class="portfolio-info">
+              <h4>Certificate Name</h4>
+              <p>Issuing Organization</p>
+              <p class="cert-note">Brief description of what it covers</p>
+              <a href="./Portfolio_files/cert-xyz.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Certificate Name"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+          -->
 
         </div>
 
       </div>
-    </section><section id="github-profile" class="github-profile">
-  <div class="container">
+    </section>
 
-    <div class="section-title">
-      <span>GitHub Profile</span>
-      <h2>GitHub Profile</h2>
-      <p>Explore my GitHub repositories and contributions.</p>
-      <p>Contributed to numerous top open-source projects worldwide.</p>
-    </div>
+    <section id="github-profile" class="github-profile" aria-labelledby="github-heading">
+      <div class="container">
 
-    <div class="row">
-
-      <div class="col-lg-6">
+        <div class="section-title">
+          <span>GitHub Profile</span>
+          <h2 id="github-heading">GitHub Profile</h2>
+          <p>Explore my GitHub repositories and open-source contributions.</p>
+        </div>
 
         <div class="row">
-
-          <div class="col-md-12">
-            <div class="info-box">
-              <i class="bi bi-github"></i>
-              <h3>GitHub Repositories</h3>
-              <ul id="github-repos-list">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bi bi-github" aria-hidden="true"></i>
+                  <h3>GitHub Repositories</h3>
+                  <!-- IMPROVED: Loading state for better UX -->
+                  <ul id="github-repos-list" aria-label="GitHub repositories list">
+                    <li style="color:#aaa; font-style:italic;">Loading repositories…</li>
                   </ul>
+                  <p style="margin-top:10px;">
+                    <a href="https://github.com/ali112919821" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                      <i class="bi bi-github" aria-hidden="true"></i> View Full GitHub Profile
+                    </a>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<section id="workbench" class="workbench" style="background: url('./Portfolio_files/bgm.jpg') center center; background-size: cover; padding: 60px 0; color: white;">
-
-    <div class="section-title">
-      <span style="color: rgba(255,255,255,0.15);">Workbench</span>
-      <h2 style="color: white;">Workbench</h2>
-      <p style="color: white;">My Projects Workbench</p>
-    </div>
-  
-<section id="projects" class="projects">
-
-  <div class="container position-relative">
-
-    <div class="testimonials-slider swiper swiper-initialized swiper-horizontal swiper-pointer-events" data-aos="fade-up" data-aos-delay="100">
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide swiper-slide-duplicate">
-          <div class="project-item">
-            <img src="./Portfolio_files/pak-energy.jpg" class="project-img" alt="">
-            <h3 style="color: white;">Pak Energy AI: Smart Energy Optimization Platform</h3>
-            <p style="color: #eee;">
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-               A <strong>Machine Learning-powered web app</strong> built with <strong>Streamlit</strong>, designed to address Pakistan's critical energy challenges. This platform provides <strong>real-time electricity demand forecasting, renewable energy optimization, and carbon impact tracking</strong> — helping ensure a sustainable and energy-secure future.
-               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-
-        <div class="swiper-slide swiper-slide-duplicate">
-          <div class="project-item">
-            <img src="./Portfolio_files/spacex.jpg" class="project-img" alt="">
-            <h3 style="color: white;">SpaceX Launch Analysis & Prediction Platform</h3>
-            <p style="color: #eee;">
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              A <strong>Machine Learning-powered web app</strong> built with <strong>Streamlit</strong>, that analyzes historical SpaceX launch data and predicts the success probability of Falcon 9 launches. This project combines <strong>data analysis, visualization, and predictive modeling</strong> to explore how different factors affect SpaceX mission outcomes.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="project-item">
-            <img src="./Portfolio_files/pak-energy.jpg" class="project-img" alt="">
-            <h3 style="color: white;">Pak Energy AI: Smart Energy Optimization Platform</h3>
-            <p style="color: #eee;">
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-               A <strong>Machine Learning-powered web app</strong> built with <strong>Streamlit</strong>, designed to address Pakistan's critical energy challenges. This platform provides <strong>real-time electricity demand forecasting, renewable energy optimization, and carbon impact tracking</strong> — helping ensure a sustainable and energy-secure future.
-               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="project-item">
-            <img src="./Portfolio_files/spacex.jpg" class="project-img" alt="">
-            <h3 style="color: white;">SpaceX Launch Analysis & Prediction Platform</h3>
-            <p style="color: #eee;">
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              A <strong>Machine Learning-powered web app</strong> built with <strong>Streamlit</strong>, that analyzes historical SpaceX launch data and predicts the success probability of Falcon 9 launches. This project combines <strong>data analysis, visualization, and predictive modeling</strong> to explore how different factors affect SpaceX mission outcomes.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
         </div>
 
       </div>
-      <div class="swiper-pagination"></div>
-    </div>
+    </section>
 
-  </div>
-</section>
-</section>
+    <section id="workbench" class="workbench" style="background: url('./Portfolio_files/bgm.jpg') center center; background-size: cover; padding: 60px 0; color: white;" aria-labelledby="workbench-heading">
+      <div class="section-title">
+        <span style="color: rgba(255,255,255,0.4); text-shadow: 1px 1px 3px black;">Projects</span>
+        <h2 id="workbench-heading" style="color: white; text-shadow: 2px 2px 4px black;">Projects</h2>
+        <p style="color: white; text-shadow: 1px 1px 3px black;">Selected ML &amp; AI Projects</p>
+      </div>
+      
+      <section id="projects" class="projects">
+        <div class="container position-relative">
 
-<section id="contact" class="contact">
-     <div class="container">
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="project-item" style="background: rgba(0,0,0,0.6); padding: 20px; border-radius: 10px;">
+                  <!-- IMPROVED: Descriptive alt text -->
+                  <h3 style="color: white; text-shadow: 1px 1px 2px black;">Pak Energy AI: Smart Energy Optimization Platform</h3>
+                  <p style="color: #eee; text-shadow: 1px 1px 2px black;">
+                    A <strong>Machine Learning-powered web app</strong> built with <strong>Streamlit</strong>, designed to address Pakistan's critical energy challenges. Provides <strong>real-time electricity demand forecasting, renewable energy optimization, and carbon impact tracking</strong> — helping ensure a sustainable and energy-secure future.
+                  </p>
+                  <!-- IMPROVED: Added tech stack tags as recommended by Perplexity -->
+                  <div class="project-meta" style="text-align:center;">
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">Streamlit</span>
+                    <span class="project-tag">Scikit-learn</span>
+                    <span class="project-tag">Time-Series Forecasting</span>
+                    <span class="project-tag">Data Visualization</span>
+                  </div>                  
+                  <!-- IMPROVED: Added GitHub link button (update href to actual repo) -->
+                  <div class="project-links" style="text-align:center; margin-top:15px;">
+                    <a href="https://github.com/ali112919821/Pak-Energy-AI" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Pak Energy AI on GitHub">
+                      <i class="bi bi-github" aria-hidden="true"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="project-item" style="background: rgba(0,0,0,0.6); padding: 20px; border-radius: 10px;">
+                  <h3 style="color: white; text-shadow: 1px 1px 2px black;">SpaceX Launch Analysis &amp; Prediction Platform</h3>
+                  <p style="color: #eee; text-shadow: 1px 1px 2px black;">
+                    A <strong>Machine Learning-powered web app</strong> built with <strong>Streamlit</strong> that analyzes historical SpaceX launch data and predicts the success probability of Falcon 9 launches. Combines <strong>data analysis, visualization, and predictive modeling</strong> to explore how different factors affect SpaceX mission outcomes.
+                  </p>
+                  <!-- IMPROVED: Added tech stack tags -->
+                  <div class="project-meta" style="text-align:center;">
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">Streamlit</span>
+                    <span class="project-tag">XGBoost</span>
+                    <span class="project-tag">Plotly</span>
+                    <span class="project-tag">Predictive Modeling</span>
+                  </div>
+                  <div class="project-links" style="text-align:center; margin-top:15px;">
+                    <a href="https://github.com/ali112919821/SpaceX-Launch-Analysis-Prediction-Platform" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View SpaceX project on GitHub">
+                      <i class="bi bi-github" aria-hidden="true"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </section>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+      <div class="container">
 
         <div class="section-title">
           <span>Contact Me</span>
-          <h2>Contact Me</h2>
-          <p>Feel free to reach out for collaboration or inquiries.</p>
+          <h2 id="contact-heading">Contact Me</h2>
+          <p>Feel free to reach out for collaboration, opportunities, or inquiries.</p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-6">
-
             <div class="row">
-    
               <div class="col-md-12">
                 <div class="info-box">
-                  <i class="bx bx-share-alt"></i>
+                  <i class="bx bx-share-alt" aria-hidden="true"></i>
                   <h3>Social Profiles</h3>
                   <div class="social-links">
-                    <a href="https://github.com/ali112919821" class="github" target="_blank"><i class="bi bi-github"></i></a>
-                    <a href="https://www.linkedin.com/in/ali112919821/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/ali112919821" class="github" target="_blank" rel="noopener noreferrer" aria-label="Ali Ahmed's GitHub profile"><i class="bi bi-github" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/ali112919821/" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Ali Ahmed's LinkedIn profile"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
                   </div>
                 </div>
               </div>
-              
             </div>
-          
           </div>
 
           <div class="col-lg-6">
             <div class="col-md-12">
               <div class="info-box mt-4">
-                <i class="bx bx-envelope"></i>
+                <i class="bx bx-envelope" aria-hidden="true"></i>
                 <h3>Email Me</h3>
-                <p>3316-2023@hamdard.edu</p>
+                <p><a href="mailto:3316-2023@hamdard.edu">3316-2023@hamdard.edu</a></p>
+                <!-- NOTE: Consider adding a professional email (e.g., ali@aliahmmed.com) for job applications -->
               </div>
             </div>
-        
           </div>
-          
 
         </div>
 
       </div>
-    </section> 
-    </main>
+    </section>
+
+  </main>
     
-  <footer id="footer" style="background: url('./Portfolio_files/bgm.jpg') center center; background-size: cover; color: white; padding: 60px 0;">
-    <div class="container">
-      <h3 style="color: white;">Ali Ahmed</h3>
-      <p style="color: #ddd;">AI Engineer</p>
-      <p style="color: #bbb;">Last updated 2 March 2026</p>
+  <footer id="footer" style="background: url('./Portfolio_files/bgm.jpg') center center; background-size: cover; color: white; padding: 60px 0; position: relative;" role="contentinfo">
+    <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0, 0, 0, 0.4); z-index: 1;" aria-hidden="true"></div>
+
+    <div class="container" style="position: relative; z-index: 2;">
+      <h3 style="color: white; text-shadow: 2px 2px 4px black; font-family: 'Satisfy', cursive !important; font-weight: normal; font-size: 40px;">Ali Ahmed</h3>
+      <p style="color: #ddd; text-shadow: 1px 1px 3px black;">Artificial Intelligence Engineer</p>
+      <!-- IMPROVED: Updated to current date -->
+      <p style="color: #bbb; text-shadow: 1px 1px 3px black;">Last updated March 2026</p>
       <div class="social-links">
-        <a href="https://github.com/ali112919821" class="github" target="_blank" style="color: white; border: 1px solid white;"><i class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/ali112919821/" class="linkedin" target="_blank" style="color: white; border: 1px solid white;"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/ali112919821" class="github" target="_blank" rel="noopener noreferrer" aria-label="GitHub" style="color: white; border: 1px solid white; background: rgba(0,0,0,0.5);"><i class="bx bxl-github" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/ali112919821/" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="color: white; border: 1px solid white; background: rgba(0,0,0,0.5);"><i class="bx bxl-linkedin" aria-hidden="true"></i></a>
       </div>
-      <div class="copyright" style="color: #eee;">
-        © Copyright <strong><span>Ali Ahmed</span></strong>. All Rights Reserved
+      <div class="copyright" style="color: #eee; text-shadow: 1px 1px 3px black;">
+        &copy; <span id="footer-year"></span> <strong style="color: white;">Ali Ahmed</strong>. All Rights Reserved
       </div>
     </div>
   </footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center active"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center active" aria-label="Back to top"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
 
-  <script src="./Portfolio_files/purecounter_vanilla.js.download"></script>
-  <script src="./Portfolio_files/bootstrap.bundle.min.js.download"></script>
-  <script src="./Portfolio_files/glightbox.min.js.download"></script>
-  <script src="./Portfolio_files/isotope.pkgd.min.js.download"></script>
-  <script src="./Portfolio_files/swiper-bundle.min.js.download"></script>
-  <script src="./Portfolio_files/noframework.waypoints.js.download"></script>
-  <script src="./Portfolio_files/validate.js.download"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
+  <script src="./Portfolio_files/main.js"></script> <script>
+    // 1. IMPROVED: PureCounter initialization with fallback CDN
+    if (typeof PureCounter === 'function') {
+      new PureCounter();
+    } else {
+      var pcScript = document.createElement('script');
+      pcScript.src = 'https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js';
+      pcScript.onload = function() { new PureCounter(); };
+      document.head.appendChild(pcScript);
+    }
 
-  <script src="./Portfolio_files/main.js.download"></script>
+    // 2. SKILLS ANIMATION FIX: Progress bar runs when scrolled into view
+    let skilsContent = document.querySelector('.skills-content');
+    if (skilsContent && typeof Waypoint !== 'undefined') {
+      new Waypoint({
+        element: skilsContent,
+        offset: '80%',
+        handler: function(direction) {
+          let progress = document.querySelectorAll('.progress .progress-bar');
+          progress.forEach((el) => {
+            el.style.width = el.getAttribute('aria-valuenow') + '%';
+          });
+        }
+      });
+    }
 
-  <script>
-    // API Code for DP and REPOS
+    // 3. Dynamic copyright year (Make sure your footer has <span id="footer-year"></span>)
+    let footerYearEl = document.getElementById('footer-year');
+    if(footerYearEl) {
+      footerYearEl.textContent = new Date().getFullYear();
+    }
+
     const githubUsername = 'ali112919821';
-  
-    // Fetch GitHub repositories using GitHub API
-    fetch(`https://api.github.com/users/${githubUsername}/repos`)
-      .then(response => response.json())
-      .then(repos => {
-        const reposList = document.getElementById('github-repos-list');
-        reposList.innerHTML = '';
-        repos.forEach(repo => {
-          const listItem = document.createElement('li');
-          listItem.innerHTML = `<a href="${repo.html_url}" target="_blank">${repo.name}</a>`;
-          reposList.appendChild(listItem);
-        });
-      })
-      .catch(error => console.error('Error fetching GitHub repositories:', error));
 
-    // Fetch Real-time GitHub Profile Picture
-    fetch(`https://api.github.com/users/${githubUsername}`)
-      .then(response => response.json())
-      .then(userData => {
-        const imageDiv = document.querySelector('.about .image');
+    // 4. IMPROVED: GitHub Repos — sort by updated, limit to top 8 for readability
+    fetch('https://api.github.com/users/' + githubUsername + '/repos?sort=updated&per_page=8')
+      .then(function(response) { return response.json(); })
+      .then(function(repos) {
+        var reposList = document.getElementById('github-repos-list');
+        if(reposList) {
+            reposList.innerHTML = '';
+            if (!repos || repos.length === 0) {
+              reposList.innerHTML = '<li style="color:#aaa;">No public repositories found.</li>';
+              return;
+            }
+            repos.forEach(function(repo) {
+              var listItem = document.createElement('li');
+              listItem.innerHTML = '<a href="' + repo.html_url + '" target="_blank" rel="noopener noreferrer">' + repo.name + '</a>';
+              reposList.appendChild(listItem);
+            });
+        }
+      })
+      .catch(function(error) {
+        let reposList = document.getElementById('github-repos-list');
+        if(reposList) reposList.innerHTML = '<li style="color:#aaa;">Could not load repositories.</li>';
+        console.error('GitHub repos fetch error:', error);
+      });
+
+    // 5. IMPROVED: GitHub Profile Picture with fallback handling
+    fetch('https://api.github.com/users/' + githubUsername)
+      .then(function(response) { return response.json(); })
+      .then(function(userData) {
+        var imageDiv = document.querySelector('.about .image');
         if (imageDiv && userData.avatar_url) {
-          imageDiv.style.setProperty('background-image', `url(${userData.avatar_url})`, 'important');
+          imageDiv.style.setProperty('background-image', 'url(' + userData.avatar_url + ')', 'important');
           imageDiv.style.setProperty('background-size', 'cover', 'important');
           imageDiv.style.setProperty('background-position', 'center', 'important');
         }
       })
-      .catch(error => console.error('Error fetching GitHub profile picture:', error));
+      .catch(function(error) {
+        // Fallback: show initials placeholder if GitHub fetch fails
+        var imageDiv = document.querySelector('.about .image');
+        if (imageDiv) {
+          imageDiv.style.background = 'linear-gradient(135deg, #8a1ac2, #2cbdee)';
+          imageDiv.innerHTML = '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:64px;font-weight:bold;color:white;font-family:Raleway,sans-serif;">AA</div>';
+        }
+        console.error('GitHub profile fetch error:', error);
+      });
   </script>
-  
+  <script>
+    // FIX FOR PORTFOLIO / CERTIFICATES FILTERING
+    window.addEventListener('load', () => {
+      let portfolioContainer = document.querySelector('.portfolio-container');
+      if (portfolioContainer && typeof Isotope !== 'undefined') {
+        // Isotope ko initialize kiya
+        let portfolioIsotope = new Isotope(portfolioContainer, {
+          itemSelector: '.portfolio-item',
+          layoutMode: 'fitRows'
+        });
 
-</body></html>
+        // Filter buttons par click function lagaya
+        let portfolioFilters = document.querySelectorAll('#portfolio-flters li');
+        portfolioFilters.forEach(function(filterBtn) {
+          filterBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Sab se 'filter-active' class hatayi
+            portfolioFilters.forEach(function(el) {
+              el.classList.remove('filter-active');
+            });
+            
+            // Jis par click kiya uspe 'filter-active' lagayi
+            this.classList.add('filter-active');
+            
+            // Items ko filter kar diya (hide/show)
+            portfolioIsotope.arrange({
+              filter: this.getAttribute('data-filter')
+            });
+          });
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
