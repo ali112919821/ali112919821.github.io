@@ -1585,3 +1585,15 @@ a:hover {
 #footer .social-links a:hover {
   background: #00b7ff;
 }
+
+.project-meta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+}
